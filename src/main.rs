@@ -34,10 +34,8 @@ enum Commands {
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let cli = Cli::parse();
-    let rpc_client = RpcClient::new_with_commitment(
-        cli.rpc_url.clone(),
-        CommitmentConfig::confirmed(),
-    );
+    let rpc_client =
+        RpcClient::new_with_commitment(cli.rpc_url.clone(), CommitmentConfig::confirmed());
 
     // Load keypair
     let keypair_path = shellexpand::tilde(&cli.keypair_path).into_owned();
@@ -58,7 +56,7 @@ async fn say_hello(
 ) -> Result<(), Box<dyn std::error::Error>> {
     let program_id = Pubkey::from_str("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFp1Jg")?;
 
-    // Create instruction
+    //  create instruction
     let accounts = multisig_squad::accounts::Hello {
         user: keypair.pubkey(),
     };
@@ -80,7 +78,7 @@ async fn say_hello(
     let signature = rpc_client.send_and_confirm_transaction(&transaction)?;
     println!("✅ Hello executed successfully!");
     println!("📋 Signature: {}", signature);
-    println!("👤 Called by: {}", keypair.pubkey());
+    println!("Person Called by: {}", keypair.pubkey());
 
     Ok(())
 }
