@@ -94,3 +94,4 @@ declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFp1Jg");
 ```
 
 Make sure both files use the same program ID!
+# multisig-squad
