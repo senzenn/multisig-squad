@@ -3,8 +3,7 @@ seeds = false
 skip-lint = false
 
 [programs.localnet]
-multisig_squad = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFp1Jgi"
-squads_multisig = "SMPLecH534NA9acpos4G6x7uf3LWbCA5RMNPBJXWYK"
+multisig_squad = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFp1Jg"
 
 [registry]
 url = "https://api.apr.dev"
@@ -14,12 +13,10 @@ cluster = "Localnet"
 wallet = "~/.config/solana/id.json"
 
 [programs.devnet]
-multisig_squad = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFp1Jgi"
-squads_multisig = "SMPLecH534NA9acpos4G6x7uf3LWbCA5RMNPBJXWYK"
+multisig_squad = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFp1Jg"
 
 [programs.mainnet]
-multisig_squad = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFp1Jgi"
-squads_multisig = "SMPLecH534NA9acpos4G6x7uf3LWbCA5RMNPBJXWYK"
+multisig_squad = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFp1Jg"
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"

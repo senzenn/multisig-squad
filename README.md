@@ -74,10 +74,9 @@ This is a simple starting point! You can build upon this by:
 ## Building Step by Step
 
 1. ✅ **Hello World** - Simple function that logs a message
-2. ⏳ **Counter** - Program that increments a number
-3. ⏳ **Simple Vault** - Store some data
-4. ⏳ **Basic Multisig** - Multiple signatures required
-5. ⏳ **Advanced Multisig** - Time locks, proposal management
+2. ⏳ **Simple Vault** - Store some data
+3. ⏳ **Basic Multisig** - Multiple signatures required
+4. ⏳ **Advanced Multisig** - Time locks, proposal management
 
 ## Dependencies
 
